@@ -33,15 +33,6 @@ $(document).ready(function () {
           focusOnSelect: true,
         },
       },
-      {
-        breakpoint: 475,
-        settings: {
-          vertical: false,
-          centerMode: true,
-          slidesToShow: 1,
-          focusOnSelect: true,
-        },
-      },
     ],
   });
 

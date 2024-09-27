@@ -261,7 +261,7 @@ a {
 }
 
 .tour-3d {
-  margin: 40px 0;
+  margin: 20px 0;
   .info {
     border-radius: 20px;
     background: #d9d9d9;
@@ -278,7 +278,7 @@ a {
 }
 
 .slider-style {
-  margin: 40px 0;
+  margin: 20px 0;
   .wrapper {
     .info {
       @include flex;
@@ -305,18 +305,23 @@ a {
           font-size: 40px;
           font-weight: 600;
           color: #033020;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           @media (max-width: 1024px) {
             font-size: 30px;
           }
           @media (max-width: 767px) {
             font-size: 26px;
+            margin-bottom: 20px;
           }
         }
         p {
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           font-size: 16px;
           color: #2f2f2f;
+          max-width: 400px;
+          @media (max-width: 767px) {
+            margin-bottom: 20px;
+          }
         }
         .buttons-style {
           display: grid;
@@ -371,9 +376,8 @@ a {
         position: relative;
         z-index: 0;
         width: 55%;
-        @media (max-width: 1100px) {
-          align-self: flex-end;
-        }
+        align-self: flex-end;
+
         @media (max-width: 1024px) {
           width: 60%;
         }
@@ -382,8 +386,8 @@ a {
         }
         .slider-navigation {
           position: absolute;
-          bottom: 0;
-          right: 0;
+          bottom: 3px;
+          right: -6px;
           @media (max-width: 1100px) {
             width: 90px;
           }
@@ -415,6 +419,10 @@ a {
         .style-slider2 {
           .item {
             @include flex;
+            min-height: 370px;
+            @media (max-width: 1024px) {
+              min-height: auto;
+            }
             @media (max-width: 767px) {
               min-height: 200px;
             }
@@ -441,8 +449,8 @@ a {
       }
       .slider-navigation {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 3px;
+        left: -6px;
         @media (max-width: 1100px) {
           width: 90px;
         }
